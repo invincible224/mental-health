@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind Ease Care site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="maincss/main.css">
+  <link rel="stylesheet" href="maincss/home.css">
+  <link rel="stylesheet" href="maincss/events.css">
+  <link rel="stylesheet" href="maincss/article.css">
+  <link rel="stylesheet" href="maincss/Appointment.css">
+  <link rel="stylesheet" href="maincss/aboutus.css">
+  <link rel="stylesheet" href="maincss/therapists.css">
+  <link rel="stylesheet" href="maincss/testimonials.css">
+  <link rel="stylesheet" href="maincss/fsq.css">
+  <link rel="stylesheet" href="maincss/scrolltext.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div id="main">
+    <div id="Home">
+      <div id="navbar">
+        <img src="/images/logo.png" alt="Logo">
+        <div id="navbar-part">
+          <a href="#Home">Home</a>
+          <a href="#Article">Articles</a>
+          <a href="#Appointment">Appointment</a>
+          <a href="#Therapists">Therapists</a>
+          <a href="#events-main">Events</a>
+          <a href="#testimonials">AboutUs</a>
+          <i class="ri-menu-3-fill"></i>
+
+        </div>
+      </div>
+      <!-- <div id="navspace"></div> -->
+      <div id="homepage">
+        <div id="lefthomepage">
+          <h1><span>Healing</span></h1>
+          <h1> Begins with a single step toward </h1>
+          <h1>Understanding yourself.</h1>
+          <p>At MindEaseCare, we believe that peace of mind is the foundation of a healthy life.<br>Together, we nurture
+            your mental well-being, one mindful step at a time.</p>
+          <a href="#Article"><button type="button">Click here to Explore us</button></a>
+        </div>
+
+
+        <div id="righthomepage">
+          <a href="#Article">
+            <div id="card1">
+              <div class="card1">
+                <h1>Article</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore dolor esse similique!</p>
+
+              </div>
+            </div>
+          </a>
+          <a href="#Appointment">
+            <div id="card2">
+              <div class="card1">
+                <h1>Appointment</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore dolor esse similique!</p>
+              </div>
+            </div>
+          </a>
+          <a href="#Events">
+            <div id="card3">
+              <div class="card1">
+                <h1>Events</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis inventore dolor esse similique!</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <!-- <div class="scrolling-text">
+        <p>Mind_Ease_Care Practices * 24/7 Resources * Mind_Ease_Care Practices * 24/7 Resources *</p>
+      </div> -->
+      <div id="fsq">
+        <section class="faq-section">
+          <h1>Curious Minds</h1>
+          <div class="faq">
+            <div class="question">
+              <p>What services do you offer?</p>
+              <div class="answer">
+                <p>We offer counseling, workshops, and resources to boost your mental health!</p>
+              </div>
+            </div>
+            <div class="question">
+              <p>How can I get started?</p>
+              <div class="answer">
+                <p>Getting started is easy! Just sign up and schedule your first session.</p>
+              </div>
+            </div>
+            <div class="question">
+              <p>Is it really confidential?</p>
+              <div class="answer">
+                <p>Yes, all our services are completely confidential and secure.</p>
+              </div>
+            </div>
+            <div class="question">
+              <p>Can I join from anywhere?</p>
+              <div class="answer">
+                <p>Yes! We’re online, so you can join from your couch or the moon!</p>
+              </div>
+            </div>
+            <div class="question">
+              <p>What if I need immediate help?</p>
+              <div class="answer">
+                <p>Call emergency services or a crisis hotline, we care about you!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- <div id="navspace"></div>    -->
+
+      <div id="Article">
+        <div id="navspace"></div>
+        <div class="container">
+          <h1>Mental Health & Wellness News</h1>
+
+          <!-- Search Bar -->
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search News...">
+            <button onclick="searchNews()">Search</button>
+          </div>
+
+          <!-- Button Group -->
+          <div class="button-group">
+            <button onclick="fetchNews()" id="refresh-btn">Refresh</button>
+            <button onclick="fetchMentalHealthNews()">Mental Health</button>
+          </div>
+
+          <!-- Horizontal Scrolling News Section -->
+          <div id="news-container" class="news-slider"></div>
+        </div>
+      </div>
+
+      <div id="Appointment">
+        <div class="content">
+          <h1>Take care of your</h1>
+          <h1><span id="health">health </span>and <span id="happy">happiness</span></h1>
+          <h1>with us.</h1>
+          <p>"Your health is important to us", online doctor consultation,<br> your Doctor is just one click away.</p>
+          <a href="#"><button id="appointment">Book Appointment</button></a>
+        </div>
+
+        <div class="image-container">
+          <img src="/images/appoedited1.png" alt="Health and Happiness">
+        </div>
+      </div>
+
+      <div id="Therapists">
+        <h1>Meet Our Expert Therapists</h1>
+
+        <div class="expert-section">
+          <!-- Therapist 1 -->
+          <div class="therapist-card" onclick="showDetails('therapist1')">
+            <img src="https://cdn.pixabay.com/photo/2023/12/15/18/40/ai-generated-8451277_640.png" alt="Therapist 1">
+            <div class="therapist-info">
+              <h3>Dr. John Doe</h3>
+              <p>Clinical Psychologist</p>
+            </div>
+          </div>
+
+          <!-- Therapist 2 -->
+          <div class="therapist-card" onclick="showDetails('therapist2')">
+            <img src="https://cdn.pixabay.com/photo/2024/02/16/21/37/ai-generated-8578391_640.png" alt="Therapist 2">
+            <div class="therapist-info">
+              <h3>Dr. Jane Smith</h3>
+              <p>Behavioral Therapist</p>
+            </div>
+          </div>
+
+          <!-- Therapist 3 -->
+          <div class="therapist-card" onclick="showDetails('therapist3')">
+            <img src="https://cdn.pixabay.com/photo/2024/03/25/18/35/ai-generated-8655320_640.png" alt="Therapist 3">
+            <div class="therapist-info">
+              <h3>Dr. Michael Lee</h3>
+              <p>Marriage Counselor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Therapist Details -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalDetails">
+              <!-- Therapist details will be displayed here -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="events-section" id="events-main">
+        <h2>Events & Webinars</h2>
+        <p>Looking for mental health events in the city? Experience some events organized by the community!</p>
+        <div class="events-container">
+            <div class="event-card">
+                <img src="/images/event3.jpg" alt="Event Image" class="event-image">
+                <div class="event-header">
+                    <span class="event-type">Online Event</span>
+                    <span class="event-location">Mumbai</span>
+                </div>
+                <h3>Peer Support - LGBTQIA+</h3>
+                <p class="event-details">Support Group</p>
+                <p class="event-signup">Direct Sign Up Form Available.</p>
+                <p class="event-time">Meeting In 2 Hours From Now</p>
+                <p class="event-date">Friday, Oct 4 2024</p>
+                <p class="event-duration">6:00pm - 7:00pm</p>
+                <p class="event-price">Online | Free</p>
+                <p class="event-category">Community Gathering</p>
+            </div>
+            <div class="event-card">
+              <img src="/images/event2.jpg" alt="Event Image" class="event-image">
+                <div class="event-header">
+                    <span class="event-type">Online Event</span>
+                    <span class="event-location">Mumbai</span>
+                </div>
+                <h3>Grief or Loss (Grief Support Group)</h3>
+                <p class="event-details">Support Group</p>
+                <p class="event-signup">Direct Sign Up Form Available.</p>
+                <p class="event-time">Meeting In 18 Hours From Now</p>
+                <p class="event-date">Saturday, Oct 5 2024</p>
+                <p class="event-duration">10:00am - 12:00pm</p>
+                <p class="event-price">Online | Starting ₹ 1,000</p>
+                <p class="event-category">Community Gathering</p>
+            </div>
+            <div class="event-card">
+              <img src="/images/event3.jpg" alt="Event Image" class="event-image">
+                <div class="event-header">
+                    <span class="event-type">Online Event</span>
+                    <span class="event-location">Mumbai</span>
+                </div>
+                <h3>Learning To Set Healthy Boundaries</h3>
+                <p class="event-details">Direct Sign Up Form Available.</p>
+                <p class="event-time">Meeting In 20 Hours From Now</p>
+                <p class="event-date">Saturday, Oct 5 2024</p>
+                <p class="event-duration">12:00pm - 1:15pm</p>
+                <p class="event-price">Online | ₹ 3,000 (For all 4 sessions)</p>
+                <p class="event-category">Community Gathering</p>
+            </div>
+            <div class="event-card">
+              <img src="/images/event2.jpg" alt="Event Image" class="event-image">
+                <div class="event-header">
+                    <span class="event-type">Offline Event</span>
+                    <span class="event-location">Mumbai</span>
+                </div>
+                <h3>Grief Peer Meet (Grief Support Group)</h3>
+                <p class="event-details">Support Group</p>
+                <p class="event-signup">Direct Sign Up Form Available.</p>
+                <p class="event-time">Meeting In 2 Days From Now</p>
+                <p class="event-date">Sunday, Oct 6 2024</p>
+                <p class="event-duration">4:00pm - 5:00pm</p>
+                <p class="event-price">Offline | Free</p>
+                <p class="event-category">Community Gathering</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+      <div id="testimonials">
+        <section class="testimonials">
+          <h1>Cheers!</h1>
+          <div class="testimonial-container">
+            <div class="testimonial">
+              <img src="https://cdn.pixabay.com/photo/2015/05/01/19/40/girl-748932_960_720.jpg" alt="Emily R.">
+              <p>Mindscape changed my life! I laugh more and stress less!</p>
+              <h3>Emily R.</h3>
+            </div>
+            <div class="testimonial">
+              <img src="https://cdn.pixabay.com/photo/2022/06/28/05/44/style-boy-new-pose-for-men-7288888_640.jpg"
+                alt="Jake T.">
+              <p>I never knew mental health could be this fun!</p>
+              <h3>Jake T.</h3>
+            </div>
+            <div class="testimonial">
+              <img src="https://cdn.pixabay.com/photo/2018/03/02/15/39/young-3193440_640.jpg" alt="Sophie L.">
+              <p>Their support is like a warm hug for my brain!</p>
+              <h3>Sophie L.</h3>
+            </div>
+            <div class="testimonial">
+              <img src="https://cdn.pixabay.com/photo/2021/12/23/16/47/people-6889599_640.jpg" alt="Mark D.">
+              <p>I'm thriving thanks to Mindscape's amazing resources!</p>
+              <h3>Mark D.</h3>
+            </div>
+            <!-- <div class="testimonial">
+              <img src="https://cdn.pixabay.com/photo/2022/04/06/11/30/girl-7115394_640.jpg" alt="Lisa K.">
+              <p>Who knew therapy could be this entertaining?</p>
+              <h3>Lisa K.</h3> -->
+          </div>
+
+      </div>
+      </section>
+    </div>
+  </div>
+
+
+
+  <div id="AboutUs" class="about-section">
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Guided Meditations</a></li>
+            <li><a href="#">Stress Relief Techniques</a></li>
+            <li><a href="#">Mental Health Apps</a></li>
+            <li><a href="#">Counseling Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Learn More</h3>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Mind_Ease_Care Practices</a></li>
+            <li><a href="#">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>More from Us</h3>
+          <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="#">Therapy Options</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <p>Follow us</p>
+          <a href="#"><img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJjb2xvcjojRTg0MDNFIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJoLWZ1bGwgdy1mdWxsIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgcng9IjMwIiBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSJ0cmFuc3BhcmVudCIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2Utb3BhY2l0eT0iMTAwJSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PC9yZWN0Pjxzdmcgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IiNFODQwM0UiIHg9IjEyOCIgeT0iMTI4IiByb2xlPSJpbWciIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt2ZXJ0aWNhbC1hbGlnbjptaWRkbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0U4NDAzRSI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTMuMzcyIDIuMDk0YTEwLjAwMyAxMC4wMDMgMCAwIDAtNS4zNjkgMTkuMDc0YTcuNzU2IDcuNzU2IDAgMCAxIC4xNjItMi4yOTJjLjE4NS0uODM5IDEuMjk2LTUuNDYzIDEuMjk2LTUuNDYzYTMuNzM4IDMuNzM4IDAgMCAxLS4zMjQtMS41NzdjMC0xLjQ4NS44NTctMi41OTMgMS45MjMtMi41OTNhMS4zMzQgMS4zMzQgMCAwIDEgMS4zNDIgMS41MDhjMCAuOS0uNTc4IDIuMjYyLS44OCAzLjU0YTEuNTQ0IDEuNTQ0IDAgMCAwIDEuNTc1IDEuOTIzYzEuODk3IDAgMy4xNy0yLjQzMSAzLjE3LTUuMzAxYzAtMi4yMDEtMS40NTctMy44NDgtNC4xNDMtMy44NDhhNC43NDYgNC43NDYgMCAwIDAtNC45MyA0Ljc5NGEyLjk2IDIuOTYgMCAwIDAgLjY0OCAxLjk3YS40OC40OCAwIDAgMSAuMTYyLjU1NGMtLjA0Ni4xODQtLjE2Mi42MjMtLjIwOC43ODVhLjM1NC4zNTQgMCAwIDEtLjUxLjI1M2MtMS4zODQtLjU1NC0yLjAzNi0yLjA3Ny0yLjAzNi0zLjgxNmMwLTIuODQ3IDIuMzg0LTYuMjU1IDcuMTU0LTYuMjU1YzMuNzk2IDAgNi4zMTkgMi43NzcgNi4zMTkgNS43NDdjMCAzLjkwOS0yLjE3NiA2Ljg0OC01LjM5MyA2Ljg0OGEyLjg2MSAyLjg2MSAwIDAgMS0yLjQ1NC0xLjI0NnMtLjU3OSAyLjMxNi0uNjkyIDIuNzU0YTguMDI1IDguMDI1IDAgMCAxLTEuMDE5IDIuMTMxYy45MjMuMjggMS44ODIuNDIgMi44NDYuNDE2YTkuOTg4IDkuOTg4IDAgMCAwIDkuOTk2LTEwLjAwMmExMC4wMDIgMTAuMDAyIDAgMCAwLTguNjM1LTkuOTA0WiI+PC9wYXRoPjwvZz48L3N2Zz48L3N2Zz4="
+              alt="pinterest-fill" style="color:#E8403E; width:70px; height:70px;"></img></a>
+          <a href="#"><img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJjb2xvcjojM0E3NkY1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJoLWZ1bGwgdy1mdWxsIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgcng9IjMwIiBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSJ0cmFuc3BhcmVudCIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2Utb3BhY2l0eT0iMTAwJSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PC9yZWN0Pjxzdmcgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IiMzQTc2RjUiIHg9IjEyOCIgeT0iMTI4IiByb2xlPSJpbWciIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt2ZXJ0aWNhbC1hbGlnbjptaWRkbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzNBNzZGNSI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTUuNDAyIDIxdi02Ljk2NmgyLjMzM2wuMzQ5LTIuNzA4aC0yLjY4MlY5LjU5OGMwLS43ODQuMjE4LTEuMzE5IDEuMzQyLTEuMzE5aDEuNDM0VjUuODU3YTE5LjE5IDE5LjE5IDAgMCAwLTIuMDktLjEwN2MtMi4wNjcgMC0zLjQ4MiAxLjI2Mi0zLjQ4MiAzLjU4djEuOTk2aC0yLjMzOHYyLjcwOGgyLjMzOFYyMUg0YTEgMSAwIDAgMS0xLTFWNGExIDEgMCAwIDEgMS0xaDE2YTEgMSAwIDAgMSAxIDF2MTZhMSAxIDAgMCAxLTEgMWgtNC41OThaIj48L3BhdGg+PC9nPjwvc3ZnPjwvc3ZnPg=="
+              alt="facebook-box-fill" style="color:#3A76F5; width:70px; height:70px;"></img></a>
+          <a href="#"><img id="fimg"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJjb2xvcjojRTU0MzkwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJoLWZ1bGwgdy1mdWxsIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgcng9IjMwIiBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSJ0cmFuc3BhcmVudCIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2Utb3BhY2l0eT0iMTAwJSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PC9yZWN0Pjxzdmcgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IiNFNTQzOTAiIHg9IjEyOCIgeT0iMTI4IiByb2xlPSJpbWciIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt2ZXJ0aWNhbC1hbGlnbjptaWRkbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iI0U1NDM5MCI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIuMDAxIDlhMyAzIDAgMSAwIDAgNmEzIDMgMCAwIDAgMC02Wm0wLTJhNSA1IDAgMSAxIDAgMTBhNSA1IDAgMCAxIDAtMTBabTYuNS0uMjVhMS4yNSAxLjI1IDAgMCAxLTIuNSAwYTEuMjUgMS4yNSAwIDAgMSAyLjUgMFpNMTIuMDAxIDRjLTIuNDc0IDAtMi44NzguMDA3LTQuMDI5LjA1OGMtLjc4NC4wMzctMS4zMS4xNDItMS43OTguMzMyYTIuODg2IDIuODg2IDAgMCAwLTEuMDguNzAzYTIuODkgMi44OSAwIDAgMC0uNzA0IDEuMDhjLS4xOS40OS0uMjk1IDEuMDE1LS4zMzEgMS43OThDNC4wMDcgOS4wNzUgNCA5LjQ2MSA0IDEyYzAgMi40NzUuMDA3IDIuODc4LjA1OCA0LjAyOWMuMDM3Ljc4My4xNDIgMS4zMS4zMzEgMS43OTdjLjE3LjQzNS4zNy43NDguNzAyIDEuMDhjLjMzNy4zMzYuNjUuNTM3IDEuMDguNzAzYy40OTQuMTkxIDEuMDIuMjk3IDEuOC4zMzNDOS4wNzUgMTkuOTk0IDkuNDYxIDIwIDEyIDIwYzIuNDc1IDAgMi44NzgtLjAwNyA0LjAyOS0uMDU4Yy43ODItLjAzNyAxLjMwOC0uMTQyIDEuNzk3LS4zMzFhMi45MSAyLjkxIDAgMCAwIDEuMDgtLjcwM2MuMzM3LS4zMzYuNTM4LS42NDkuNzA0LTEuMDhjLjE5LS40OTIuMjk2LTEuMDE4LjMzMi0xLjhjLjA1Mi0xLjEwMy4wNTgtMS40OS4wNTgtNC4wMjhjMC0yLjQ3NC0uMDA3LTIuODc4LS4wNTgtNC4wMjljLS4wMzctLjc4Mi0uMTQzLTEuMzEtLjMzMi0xLjc5OGEyLjkxMiAyLjkxMiAwIDAgMC0uNzAzLTEuMDhhMi44ODQgMi44ODQgMCAwIDAtMS4wOC0uNzA0Yy0uNDktLjE5LTEuMDE2LS4yOTUtMS43OTgtLjMzMUMxNC45MjYgNC4wMDYgMTQuNTQgNCAxMiA0Wm0wLTJjMi43MTcgMCAzLjA1Ni4wMSA0LjEyMy4wNmMxLjA2NC4wNSAxLjc5LjIxNyAyLjQyNy40NjVjLjY2LjI1NCAxLjIxNi41OTggMS43NzIgMS4xNTNhNC45MDggNC45MDggMCAwIDEgMS4xNTMgMS43NzJjLjI0Ny42MzcuNDE1IDEuMzYzLjQ2NSAyLjQyOGMuMDQ3IDEuMDY2LjA2IDEuNDA1LjA2IDQuMTIyYzAgMi43MTctLjAxIDMuMDU2LS4wNiA0LjEyMmMtLjA1IDEuMDY1LS4yMTggMS43OS0uNDY1IDIuNDI4YTQuODg0IDQuODg0IDAgMCAxLTEuMTUzIDEuNzcyYTQuOTE1IDQuOTE1IDAgMCAxLTEuNzcyIDEuMTUzYy0uNjM3LjI0Ny0xLjM2My40MTUtMi40MjcuNDY1Yy0xLjA2Ny4wNDctMS40MDYuMDYtNC4xMjMuMDZjLTIuNzE3IDAtMy4wNTYtLjAxLTQuMTIzLS4wNmMtMS4wNjQtLjA1LTEuNzg5LS4yMTgtMi40MjctLjQ2NWE0Ljg5IDQuODkgMCAwIDEtMS43NzItMS4xNTNhNC45MDUgNC45MDUgMCAwIDEtMS4xNTMtMS43NzJjLS4yNDgtLjYzNy0uNDE1LTEuMzYzLS40NjUtMi40MjhjLS4wNDgtMS4wNjYtLjA2LTEuNDA1LS4wNi00LjEyMmMwLTIuNzE3LjAxLTMuMDU2LjA2LTQuMTIyYy4wNS0xLjA2Ni4yMTctMS43OS40NjUtMi40MjhhNC44OCA0Ljg4IDAgMCAxIDEuMTUzLTEuNzcyYTQuODk3IDQuODk3IDAgMCAxIDEuNzcyLTEuMTUzYy42MzctLjI0OCAxLjM2Mi0uNDE1IDIuNDI3LS40NjVDOC45NDUgMi4wMTMgOS4yODQgMiAxMi4wMDEgMloiPjwvcGF0aD48L2c+PC9zdmc+PC9zdmc+"
+              alt="instagram-line" style="color:#E54390; width:70px; height:70px;"></img></a>
+          <a href="#"><img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJjb2xvcjojMUMyMDMzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJoLWZ1bGwgdy1mdWxsIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgcng9IjMwIiBmaWxsPSJ0cmFuc3BhcmVudCIgc3Ryb2tlPSJ0cmFuc3BhcmVudCIgc3Ryb2tlLXdpZHRoPSIwIiBzdHJva2Utb3BhY2l0eT0iMTAwJSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PC9yZWN0Pjxzdmcgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IiMxQzIwMzMiIHg9IjEyOCIgeT0iMTI4IiByb2xlPSJpbWciIHN0eWxlPSJkaXNwbGF5OmlubGluZS1ibG9jazt2ZXJ0aWNhbC1hbGlnbjptaWRkbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0iIzFDMjAzMyI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTguMjA1IDIuMjVoMy4zMDhsLTcuMjI3IDguMjZsOC41MDIgMTEuMjRIMTYuMTNsLTUuMjE0LTYuODE3TDQuOTUgMjEuNzVIMS42NGw3LjczLTguODM1TDEuMjE1IDIuMjVIOC4wNGw0LjcxMyA2LjIzMWw1LjQ1LTYuMjMxWm0tMS4xNjEgMTcuNTJoMS44MzNMNy4wNDUgNC4xMjZINS4wNzhMMTcuMDQ0IDE5Ljc3WiI+PC9wYXRoPjwvZz48L3N2Zz48L3N2Zz4="
+              alt="twitter-x-fill" style="color:#1C2033; width:70px; height:70px;"></img></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 mentalhealthsupport.co | Terms of Service | Privacy Policy | Refund Policy | Accessibility
+          Policy</p>
+      </div>
+    </footer>
+
+
+
+  </div>
+
+  <!-- <div id="AboutUs">
+          
+        </div> -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CSSRulePlugin.min.js"
+    integrity="sha512-IxxYrSNXnt/RJlxNX40+7BQL88FLqvdpVpuV9AuvpNH/NFP0L8xA8WLxWTXx6PYExB5R/ktQisp6tIrnLn8xvw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="javas/jsaphome.js>"></script>
+  <script src="javas/article.js"></script>
+  <script src="javas/therpist.js"></script>
+  <script src="javas/scroll.js"></script>
+</body>
+
+</html>

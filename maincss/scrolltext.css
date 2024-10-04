@@ -1,0 +1,34 @@
+/* #navspace{
+    width:100%;
+    height:150px;
+    background-color: #fdecec;
+} */
+
+.scrolling-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color:#fdecec;
+    padding-top:0px;
+    border-top: 1px solid #fdecec;
+    border-bottom: 1px solid #fdecec;
+}
+
+.scrolling-text p {
+    display: inline-block;
+    font-size: 4rem;
+    font-family: myFont1;
+    color:rgb(66, 18, 109);
+    /* color: #333; */
+    font-weight: bold;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

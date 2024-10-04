@@ -1,0 +1,134 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make sure body and html cover full height */
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Wrapper to ensure footer stays at the bottom */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* This ensures the wrapper takes the full height of the viewport */
+}
+
+/* Content section (everything above footer) */
+.content {
+  flex: 1; /* This makes sure the content fills the remaining space */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Footer section */
+footer {
+  background-color: #f0f0f0;  /* Light neutral background */
+  padding: 20px 0;
+  color: #333;
+  border-top: 1px solid #ccc; /* Subtle top border */
+  width: 100%;
+  position: relative;
+}
+
+/* Footer container to structure columns */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px; /* Limit footer width */
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Each column in the footer */
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+/* Footer headings */
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Footer lists */
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px;
+}
+
+.footer-column ul li a {
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Footer social media */
+.footer-social {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-social p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+  text-transform: uppercase;
+}
+
+.footer-social a {
+  margin: 0 10px;
+}
+
+.footer-social img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Footer bottom text */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}

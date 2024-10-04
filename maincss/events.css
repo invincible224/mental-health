@@ -1,0 +1,109 @@
+/* General section styling */
+.events-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Light background for the section */
+    text-align: center;
+    border-radius: 12px; /* Rounded corners for the section */
+}
+
+.events-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.events-section p {
+    color: #666;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.event-card p{
+ margin: 13px;
+ font-size: 0.9rem;
+ font-weight: 510;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Event container styling */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align cards */
+    gap: 20px; /* Space between cards */
+}
+
+/* Event card styling */
+.event-card {
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for cards */
+    padding: 15px; /* Reduced padding */
+    max-width: 300px; /* Maximum width for each card */
+    width: 100%; /* Responsive width */
+    transition: transform 0.2s; /* Smooth scaling effect on hover */
+}
+
+.event-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.event-image {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px 12px 0 0; /* Rounded corners at the top */
+}
+
+/* Styling for event type and location box */
+.event-header {
+    display: flex;
+    justify-content: space-between; /* Align event type and location */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.event-type, .event-location {
+    padding: 4px 8px; /* Padding for boxes */
+    border-radius: 15px; /* Rounded corners for boxes */
+    color: #ffffff; /* White text color */
+    font-weight: bold; /* Bold font for visibility */
+}
+
+.event-type {
+    background-color: #1e90ff; /* Bright blue background for online events */
+}
+
+.event-location {
+    background-color: #1d1c3d; /* Tomato background for locations */
+}
+
+/* Title styling */
+.event-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 8px 0; /* Reduced margin */
+}
+
+/* Event details styling */
+.event-details {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.event-signup, .event-time, .event-date, .event-duration, .event-price, .event-category {
+    margin: 2px 0; /* Further reduced margin */
+    font-size: 14px;
+    color: #666;
+}
+
+.event-price {
+    font-weight: bold; /* Bold for price */
+    color: #e74c3c; /* Different color for price to highlight */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column; /* Stack cards on smaller screens */
+        align-items: center; /* Center align cards */
+    }
+}

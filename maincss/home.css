@@ -1,0 +1,262 @@
+#Home{
+    width:100%;
+    /* height:100vh; */
+    scroll-behavior: smooth;
+    
+    
+}
+/* Smooth transition for navbar on scroll */
+#navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    font-family: myFont1;
+    position: fixed;
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Change navbar background and shadow on scroll */
+.scrolled #navbar {
+    background-color: #edf1fa; /* Light background on scroll */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Larger shadow when scrolling */
+}
+
+/* Smooth hover effect on navbar links */
+#navbar-part a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+#navbar-part a:hover {
+    color: #009688; /* Hover color matches the theme */
+    font-weight: 600;
+}
+
+/* Adding underline on hover with smooth effect */
+#navbar-part a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #009688;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+#navbar-part a:hover::after {
+    width: 100%;
+}
+
+/* Navbar burger icon effect on smaller screens */
+#navbar-part i {
+    font-size: 25px;
+    font-weight: 600;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#navbar-part i:hover {
+    transform: rotate(90deg); /* Rotate icon on hover */
+}
+
+/* Add smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media query for smaller screens */
+
+#navbar img{
+    height:6rem;
+    width:8.5rem;
+}
+#navbar-part {
+    display:flex;
+    align-items: center;
+    gap:100px;
+    font-weight:550;
+}
+
+
+@media (max-width:600px){
+    #navbar-part a{
+        display:none;
+    }
+    #navbar-part i{
+        display:block;
+    }
+}
+/*home page main details */
+
+#homepage {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack lefthomepage on top and righthomepage below */
+    align-items: center; /* Center align the contents */
+    background-image: url(/images/newHomepage3.png);
+    /* background-size: cover; */
+    background-position: center;
+    padding-top: 100px;
+    /* padding-bottom: 20px; */
+}
+
+#lefthomepage {
+    background-image: url(/images/newHomepage3.png);
+    text-align: right;
+    width: 100%;
+    height: 510px;
+    padding: 55px;
+    
+}
+
+#lefthomepage h1 span {
+    color: #009688; /* You can style your span element if needed */
+}
+
+#lefthomepage button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border: solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#lefthomepage button:hover {
+    background-color: #026e62;
+}
+
+
+
+/* Right section (cards) */
+#righthomepage {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row; 
+    justify-content: space-between;
+    /* background-color: #dde7fe; */
+    background-color: #edf1fa;
+    gap: 20px; /* Add spacing between the cards */
+    width: 100%; /* Make it take full width */
+    padding: 70px 20px; /* Padding for spacing */
+}
+#righthomepage a{
+    text-decoration: none;
+}
+#righthomepage #card1, #card2, #card3 {
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+    /* background: linear-gradient(135deg, #25a195, #00796b); */
+    /* background-image: url(/images/newHomepage3.png); */
+    background-color: #098175;
+    background-size:contain;
+    background-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#righthomepage #card1:hover, #card2:hover, #card3:hover {
+    transform: translateY(-10px) scale(1.05); /* Lift and enlarge the card slightly */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Create a larger shadow for the lifted card */
+}
+
+.card1 h1 {
+    font-family:Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white; /* You can style your span element if needed */
+     /* Matching theme color */
+    text-align: center;
+    /* text-transform: uppercase; */
+    text-decoration:none;
+}
+.card1 p {
+    font-family:Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    /* font-weight: bold; */
+    padding: 10px;
+    margin: 5px;
+    color: white; 
+    text-align: center;
+    text-decoration:none;
+}
+
+/* Adding a subtle animation to the text */
+.card1 p {
+    opacity: 1;
+    animation: fadeInUp 0.8s ease forwards;
+    text-decoration: none;
+    
+}
+
+@media(max-width:600px){
+    
+    #homepage{
+        padding-top:120px;
+    }
+    #lefthomepage{
+        font-size:29px;
+        padding:27px;
+    }
+    #lefthomepage h1{
+        line-height: 40px;
+        font-size:2;
+    }
+    
+    #lefthomepage h1 button{
+        margin-top:40px;
+    }
+    #righthomepage {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #righthomepage #card1,#card2,#card3{
+        /* height:140px;
+        width:150px; */
+        border-radius:20px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        position:relative;
+        margin-bottom:150px;
+        flex-direction:column;
+        
+        
+    
+    }
+    #righthomepage .card p{
+        position: absolute;
+        text-align:center;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        color:white;
+        
+    }
+    #righthomepage .card1 p{
+        font-size: 10vw;
+}
+}
+
+
+
+

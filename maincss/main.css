@@ -1,0 +1,43 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    /* font-family: myFont1; */
+    /* position:relative; */
+    /* background-color: red; */
+}
+#main{
+    height:100%;
+    width:100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x:hidden;
+    /* position:absolute; */
+    background-image:linear-gradient(to right,rgba(233, 208, 141, 0.28),rgba(79, 131, 117, 0.03));
+    z-index:99;
+
+    
+}
+
+/* #webkit-scrollbar {
+    display:none;
+} */
+html {
+    scroll-behavior: smooth; /* Test if this improves scrolling */
+}
+
+
+@font-face {
+    font-family: myFont1;
+    src: url(../font/FontsFree-Net-AlkesBlack.ttf);
+}
+
+
+
+
+

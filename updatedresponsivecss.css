@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* CSS for homepage1 started */
+#homepage1 {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(233, 208, 141, 0.28), rgba(79, 131, 117, 0.03));
+}
+
+/* CSS for navbar */
+#navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#navbar img {
+    height: 80px;
+    width: 110px;
+}
+
+#navbarlink {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#navbarlink a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+/* Main content area */
+#homepage12 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* CSS for lefthome */
+#lefthome {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+#lgtext1 {
+    font-size: 3vh;
+    padding-bottom: 30px;
+}
+
+#lgtext2 {
+    text-align: center;
+    font-size: 3vh;
+    padding-right: 30px;
+}
+
+#lgcards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+/* CSS for righthome */
+#righthome {
+    height: 100vh;
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#righthome img {
+    height: 45vh;
+    width: 60vh;
+}
+
+#getstarted {
+    height: 40px;
+    width: 160px;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(36, 109, 255);
+}
+
+/* CSS for signin page started */
+#signin {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(233, 208, 141, 0.28), rgba(79, 131, 117, 0.03));
+}
+
+/* CSS for signup page started */
+#signup {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(233, 208, 141, 0.28), rgba(79, 131, 117, 0.03));
+}
+
+/* CSS for contactus page started */
+#contactus {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(233, 208, 141, 0.28), rgba(79, 131, 117, 0.03));
+}
+
+/* Responsive for screens up to 800px */
+@media (max-width: 800px) {
+    #navbar {
+        height: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #navbar img {
+        height: 70px;
+        width: 90px;
+    }
+
+    #navbarlink {
+        gap: 20px;
+    }
+
+    #navbarlink a {
+        font-size: 14px;
+    }
+
+    #homepage12 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lefthome, #righthome {
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #lgtext1, #lgtext2 {
+        font-size: 2.5vh;
+        text-align: center;
+    }
+
+    #lgcards {
+        padding-left: 0;
+        gap: 15px;
+    }
+
+    #righthome img {
+        height: 40vh;
+        width: 55vh;
+    }
+
+    #getstarted {
+        height: 35px;
+        width: 140px;
+        font-size: 16px;
+    }
+
+    /* Login and Signup Page Adjustments */
+    .login-container, .signup-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .login-box, .signup-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .forgot-password, .register-link, .login-link {
+        text-align: center;
+        font-size: 14px;
+    }
+}
